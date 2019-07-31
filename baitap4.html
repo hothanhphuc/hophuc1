@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>nam nhuan</title>
+</head>
+<body>
+<script>
+    let year = parseFloat(prompt(" enter a year"));
+    let  khong_nam_nhuan = false;
+    let nam_nhuan_4 = year % 4 === 0;
+    if ( nam_nhuan_4){
+        let nam_nhuan_100 = year % 100 === 0;
+        if (nam_nhuan_100){
+            var nam_nhuan_400 = year % 400 === 0;
+            if(nam_nhuan_400){
+                khong_nam_nhuan =true;
+            }
+        }else {
+            khong_nam_nhuan = true;
+        }
+    }
+    if(khong_nam_nhuan){ alert( year + " la nam nhuan");
+    }else {alert( year + " khong la nam nhuan");
+    }
+</script>
+</body>
+</html>
