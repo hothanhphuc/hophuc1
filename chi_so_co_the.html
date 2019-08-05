@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>chi so co the</title>
+</head>
+<body>
+<script>
+  let weight = parseFloat(prompt(" chi so can nang"));
+  let  height = parseFloat(prompt(" chi so chieu cao"));
+  let bmi = (weight/height);
+  if( bmi < 18.0){
+      document.write(" underweight");
+  } else if ( bmi >18.0 && bmi < 25.0 ) {
+      document.write("nornal");
+  } else if ( bmi >= 25.0 && bmi <= 30.0){
+      document.write(" overweight");
+      }
+  else { document.write("obese");
+  }
+</script>
+</body>
+</html>
